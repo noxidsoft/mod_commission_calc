@@ -1,0 +1,30 @@
+@CHARSET "ISO-8859-1";
+/* <!-- */
+/**
+ * version      $Id$
+ * package      Commission Calculator - Euro
+ * subpackage   mod_commission_calc_euro
+ * copyright    Copyright (C) 2009 Noxidsoft. All rights reserved.
+ * license      GNU General Public License <http://www.gnu.org/copyleft/gpl.html>
+ * author       Noel Dixon <noel.dixon@noxidsoft.com>
+ */
+.txtHint {
+	margin-left:99999px;
+}
+
+input.inputBox {
+	background-image:url('../images/euroSign.gif');
+	background-repeat:no-repeat;
+	background-color:transparent;
+	border: solid 0px transparent;
+	width:187px;
+	height:38px;
+	padding-left:20px;
+	padding-top:9px;
+	font-size: 1.5em;
+}
+
+.textStyle {
+	font-size:1.4em;
+}
+/* --> */

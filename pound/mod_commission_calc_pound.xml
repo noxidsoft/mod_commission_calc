@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * @version      $Id$
+ * @package      Commission Calculator - Pound
+ * @subpackage   mod_commission_calc_pound
+ * @copyright    Copyright (C) 2009 Noxidsoft. All rights reserved.
+ * @license      GNU General Public License <http://www.gnu.org/copyleft/gpl.html>
+ * @author       Noel Dixon <noel.dixon@noxidsoft.com>
+ */
+-->
+<install type="module" version="1.5.0">
+    <!-- Name of the Module -->
+        <name>Commission Calculator - Pound</name> 
+ 
+    <!-- Name of the Author -->
+        <author>Noxidsoft - Noel Dixon</author> 
+ 
+    <!-- Version Date of the Module -->
+        <creationDate>December 2009</creationDate> 
+ 
+    <!-- Copyright information -->
+        <copyright>(c) 2009-2011. Noxidsoft. All rights reserved.</copyright> 
+ 
+    <!-- License Information -->
+        <license>GPL 2.0</license> 
+ 
+    <!-- Author's email address -->
+        <authorEmail>noel.dixon@noxidsoft.com</authorEmail> 
+ 
+    <!-- Author's website -->
+        <authorUrl>http://www.noxidsoft.com</authorUrl> 
+ 
+    <!-- Module version number -->
+        <version>1.0.1</version> 
+ 
+    <!-- Description of what the module does -->
+        <description>Commission Calculator - Pound! A Joomla 1.5 module that works out a commission based on percentages of a sale price!</description>
+ 
+    <!-- Listing of all files that should be installed for the module to function -->
+        <files>
+        <!-- The "module" attribute signifies that this is the main controller file -->
+                <filename module="mod_commission_calc_pound">mod_commission_calc_pound.php</filename>
+                <filename>params.ini</filename>
+                <filename>index.html</filename>
+				<filename>nonstdhelper.php</filename>
+                <filename>css/index.html</filename>
+                <filename>css/template.css</filename>
+                <filename>images/index.html</filename>
+				<filename>images/dollarSign.gif</filename>
+				<filename>images/poundSign.gif</filename>
+				<filename>images/yenSign.gif</filename>
+				<filename>images/euroSign.gif</filename>
+				<filename>js/index.html</filename>
+				<filename>js/ajax.js</filename>
+        </files>
+ 
+    <!-- Optional parameters -->
+        <params>
+			<param type="spacer" default="&lt;b&gt;Style Settings&lt;/b&gt;" />
+			<param name="style" type="list" default="0" label="Select Style" description="Choose the visual style!">
+				<option value="0">Default - Inline Pretty</option>
+				<option value="1">Inline Raw</option>
+				<option value="2">Stacked Pretty</option>
+				<option value="3">Stacked Raw</option>
+			</param>
+			<param type="spacer" />
+			<param type="spacer" default="&lt;b&gt;Label Settings&lt;/b&gt;" />
+			<param name="salePriceLabel" type="text" default="Enter Your Sale Price" label="Sale Price Label" description="Enter a discriptive label for the Sale Price input box!" size="40" />
+			<param name="commissionLabel" type="text" default="Commission To Pay (+tax)" label="Commission Label" description="Enter a discriptive label for the Commission input box!" size="40" />
+			<param name="labelPosition" type="list" default="0" label="Label Position" description="Choose the label position in respect to the input fields!">
+				<option value="0">Default - Below Fields</option>
+				<option value="1">Above Fields</option>
+			</param>
+			<param type="spacer" />
+			<param type="spacer" default="&lt;b&gt;Calculation Settings&lt;/b&gt;" />
+			<param name="percentOfAmount" type="text" default="5" label="Percent (%) up to Amount" description="Use a real number i.e. 10, 15.6, etc, for the percentage (%) which will be applied to the set Amount (&#163;) in the next parameter!" size="10" />
+			<param name="amount" type="text" default="18000" label="Amount (&#163;)" description="Enter a decimal Amount (&#163;) i.e. 18000.00 or 18000! The first percentage amount will be applied to this parameter only! A user may enter a larger or lesser amount to this, but calculations will act appropriately!" size="10" />
+			<param name="percentOfEverythingAfterAmount" type="text" default="2.5" label="Percent (%) after Amount" description="Use a real number i.e. 10, 15.6, etc, for the percentage (%) which will be applied to the remaining amount if the user enters an amount greater than the set Amount (&#163;) in the second parameter!" size="10" />
+			<param name="taxation" type="text" default="10" label="Percent (%) of Tax" description="Use a real number i.e. 10, 15.6, etc, for the percentage (%) which will be applied to the final amount!" size="10" />
+		</params>
+</install>
